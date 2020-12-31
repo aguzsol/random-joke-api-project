@@ -8,5 +8,6 @@ function traerDatos(){
 
     fetch(url).
     then(response => response.json()).
-    then(data =>displayJoke.innerHTML = data.value)
+    then(data =>displayJoke.innerHTML = data.value).
+    catch(error => console.log(error))
 }
